@@ -19,15 +19,12 @@ void print_token(const char* token);
 
 int main()
 {
-    yyin = fopen("input", "r");
-    yyout = fopen("output", "w"); 
+    printf("Enter input: ");
     yylex();
-    fclose(yyin);
-    fclose(yyout);
     return 0;
 }
 
 void print_token(const char* token)
 {
-    fprintf(yyout, "%s\n", token);
+    printf("%s\n", token);
 }
