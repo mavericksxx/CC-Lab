@@ -1,6 +1,8 @@
 %{
-int flag=0
-}%
+int flag=0;
+#include <stdio.h>
+#include <stdlib.h>
+%}
 
 even_no [0-9]*[0|2|4|6|8]
 odd_no [0-9]*[1|3|5|7|9]
@@ -25,6 +27,6 @@ int main()
     if (diff%2 != 0 && f1)
         printf("\nYour inputs were checked for correctness. \nResult : Correct\n");
     else
-        printf("\nYour inputs were checked for correctness. \nResult : Inorrect\n");
+        printf("\nYour inputs were checked for correctness. \nResult : Incorrect\n");
     return 1;
 }
