@@ -6,3 +6,7 @@ Week-*/output
 Week-*/output.txt
 Week-*/y.tab.c
 Week-*/y.tab.h
+Week-*/pgm*/y.tab.h
+Week-*/pgm*/y.tab.c
+Week-*/pgm*/lex.yy.c
+Week-*/pgm*/a.out
