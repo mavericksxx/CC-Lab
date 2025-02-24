@@ -35,3 +35,11 @@ We're working with 2 files, a lex file and a yacc file
 ### Built-in variables:
 1. yylval -> used to pass value of a token from lex to yacc (link b/w them)
 2. yystype
+
+### Symbols
+1. $$ -> left side of grammar rule
+2. $1 -> first symbol appearing on the right side of grammer rule
+
+### Conflict resolution
+1. Shift-reduce conflict ->
+2. Reduce-reduce conflict -> if more than one rule derive the same non-terminal (RHS), prefers the first rule in the order
