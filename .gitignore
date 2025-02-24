@@ -3,4 +3,6 @@ Week-*/lex.yy.c
 Week-*/input
 Week-*/input.txt
 Week-*/output
-Week-*/output.txt
+Week-*/output.
+Week-#/y.tab.c
+Week-#/y.tab.h
