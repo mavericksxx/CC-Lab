@@ -2,8 +2,8 @@
 Works in bottom-up parsing
 
 ## Compiling the program
-1. lex <FILENAME>.l -> creates lex.yy.c
-2. yacc -d <FILENAME>.y -> creates y.tab.c & y.tab.h
+1. lex FILENAME.l -> creates lex.yy.c
+2. yacc -d FILENAME.y -> creates y.tab.c & y.tab.h
 3. gcc lex.yy.c y.tab.c -ll
 3. execute using ./a.out
 
