@@ -4,7 +4,7 @@
     int yylex(void);
     void yyerror(char *);  
 %} 
-    %token INTEGER PLUS MINUS MUL DIV NL
+    %token INTEGER PLUS MINUS MUL DIV LP RP NL
     %left PLUS MINUS 
     %left MUL DIV
 %%
@@ -19,6 +19,7 @@ INTEGER { $$ = $1; }
 | expr MINUS expr { $$ = $1 - $3; }
 | expr MUL expr { $$ = $1 * $3; }
 | expr DIV expr { $$ = $1 / $3; }
+| LP expr RP { $$ = $2; }
 ;
 
 %%
