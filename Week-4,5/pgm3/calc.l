@@ -10,6 +10,8 @@
 "-" return MINUS;
 "*" return MUL;
 "/" return DIV;
+"(" return LP;
+")" return RP;
 [\n] return NL;
 [ \t] ; /* skip */
 . printf("invalid character");
