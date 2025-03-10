@@ -4,7 +4,7 @@ Works in bottom-up parsing
 ## Compiling the program
 1. lex [FILENAME].l -> creates lex.yy.c
 2. yacc -d [FILENAME].y -> creates y.tab.c & y.tab.h
-3. gcc lex.yy.c y.tab.c -ll  
+3. gcc lex.yy.c y.tab.c -ll 
 // gcc lex.yy.c y.tab.c -o [FILENAME] -ll (if you want to name the output file)
 // gcc lex.yy.c y.tab.c -lm (for math functions)
 4. execute using ./a.out (or [FILENAME] if the file was renamed)

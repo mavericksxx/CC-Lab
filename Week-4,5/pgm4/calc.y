@@ -5,13 +5,14 @@
     int yylex(void);
     void yyerror(char *);  
 %} 
-    %token INTEGER PLUS MINUS MUL DIV LP RP NL
-    %left PLUS MINUS 
-    %left MUL DIV
-    %right POWER
-    %right UMINUS
-%%
 
+%token INTEGER PLUS MINUS MUL DIV LP RP NL
+%left PLUS MINUS 
+%left MUL DIV
+%right POWER
+%right UMINUS
+
+%%
 program:
 program expr NL { printf("%d\n", $2);} 
 |
@@ -26,8 +27,8 @@ INTEGER { $$ = $1; }
 | MINUS expr %prec UMINUS { $$ = -$2; }
 | LP expr RP { $$ = $2; }
 ;
-
 %%
+
 void yyerror(char *s) 
 {
     printf("Error: %s\n", s);
