@@ -1,3 +1,10 @@
+%{
+    #include <stdio.h>
+    #include <math.h>
+    #include "y.tab.h"
+    #include <ctype.h>
+%}
+
 %token INTEGER VARIABLE
 %left '+' '-'
 %left '*' '/'
@@ -30,7 +37,6 @@ INTEGER
 
 void yyerror(char *s) {
     fprintf(stderr, "%s\n", s);
-    return 0;
 }
 
 int main(void) {
