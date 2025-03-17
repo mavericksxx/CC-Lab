@@ -14,7 +14,7 @@
 "}"                        { return RCB; }
 ","                        { return COMMA; }
 ";"                        { return SC; }
-[A-Za-z][A-Za-z0-9_]*      { return VAR; }
+[a-z]*                     { return VAR; }
 [ \t\n]+                   ;
 .                          { printf("invalid character: %s\n", yytext); }
 %%
