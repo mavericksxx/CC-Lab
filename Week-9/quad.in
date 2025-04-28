@@ -1,0 +1,7 @@
+= 20 nil a
+= 30 nil b
+= 40 nil c
+= a nil eax
++ b eax eax
++ c eax eax
+= eax nil z
