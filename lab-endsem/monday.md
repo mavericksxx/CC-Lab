@@ -4,7 +4,7 @@ Consider the following Context-Free Grammar (CFG)
 S → for_stmt\
 for_stmt → FOR ‘(’ assign_stmt ‘;’ expr ‘;’ assign_stmt ‘)’ stmt\
 assign_stmt → ID ‘=’ NUM\
-expr → relop NUM\
+expr → ID relop NUM\
 relop → ‘<’ | ‘>’ | ‘<=’ | ‘>=’ | ‘==’ | ‘!=’\
 stmt → ‘{’ stmt_list ‘}’ | assign_stmt ‘;’\
 stmt_list → stmt stmt_list | ε\
