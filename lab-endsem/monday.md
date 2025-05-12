@@ -18,7 +18,7 @@ stmt_list → stmt stmt_list | ε\
 
 ## Example
 Sample input:\
-for(i=0; i<10; i=i+1) { j=2; k=k+3; }
+for(i=0; i<10; i=1) { j=2; k=3; }
 
 Expected output:\
 Valid for loop (=, i, 0) (LABEL, start, ) (<, i, 10) (IF_FALSE_GOTO, (<, i, 10), end) (=, j, 2)
