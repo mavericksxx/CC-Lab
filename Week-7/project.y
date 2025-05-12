@@ -106,7 +106,10 @@ DATA_TYPE
         $$ = $1;
         current_data_type = $1;
     }
-    | FLOAT
+    | FLOAT{
+        $$ = $1;
+        current_data_type = $1;
+    }
     | DOUBLE
     ;
 
